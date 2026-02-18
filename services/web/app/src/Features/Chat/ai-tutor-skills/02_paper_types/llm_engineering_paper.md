@@ -47,3 +47,21 @@ Here is the guidance for LLM Engineering papers:
 Critique the section based on these criteria.
 Suggest improvements, specifically asking for missing metrics or ablations if applicable.
 ```
+
+## How to Critique Engineering Papers (Based on ICLR 2025 Reviews)
+
+### 1. The Value of "Openness" and Reproducibility
+**Reviewer Insight:** For engineering papers, releasing the artifact *is* the contribution.
+- **Good Example (Praise):** "This is the only MoE model where the model weights, code, data and checkpoints are openly available... thus the work is entirely reproducible." (*OLMoE* review)
+- **Bad Example (Critique):** "The methodology is interesting... but [lack of code/details] makes the results hard to reproduce."
+
+### 2. Scale and Efficiency > Novelty
+**Reviewer Insight:** Engineering papers don't need new math, they need to show it works *at scale*.
+- **Good Example (Praise):** "Strong empirical results with state-of-the-art performance for 1B active parameters." "Good exploration of the [MoE] design space which forms a good guide."
+- **Bad Example (Critique):** "The solution is somewhat incremental and its novelty is low." (Use this critique only if the *engineering* gains are also small). if the engineering gains are large, novelty is secondary.
+
+### 3. Ablation is Critical for "Systems" Papers
+**Reviewer Insight:** In complex systems, we need to know which part matters.
+- **Bad Example (Critique):** "Lack of Ablation: 'Our system is 5x faster.' Why? Is it the custom kernel, the better data loader, or the hardware upgrade?"
+- **Action:** Ask for a breakdown of performance gains by component.
+

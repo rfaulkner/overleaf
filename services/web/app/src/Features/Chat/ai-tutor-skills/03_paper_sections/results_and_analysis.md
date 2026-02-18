@@ -131,3 +131,23 @@ Then, suggest improvements, such as:
 2.  Adding interpretive sentences for Figure X.
 3.  Suggesting a bold "Finding 1: ..." structure.
 ```
+
+## How to Critique Results (Based on ICLR 2025 Reviews)
+
+### 1. Baselines and Comparisons
+**Reviewer Insight:** Weak baselines are a primary cause for rejection.
+- **Bad Example (Critique):** "Important baselines are missing... The author needs to compare SIG against SYNTHER... and REDQ." "There is also a lack of comparison with other HPO methods."
+- **Good Example (Praise):** "Comparisons include all the mentioned relevant predecessor methods."
+- **Action:** Ask: "Are there any obvious baselines missing? Is the comparison 'apples-to-apples' (same compute, same data)?"
+
+### 2. Ablation Studies
+**Reviewer Insight:** We need to know *what* makes it work.
+- **Bad Example (Critique):** "No ablation study on [Hyperparameter]." "It is unclear why the authors want to utilize these data sources and why the data mixture should be adopted as it is."
+- **Good Example (Praise):** "A proper ablation study is done on the various choices/hyperparameters." "Ablation results showing the effectiveness of the proposed method."
+- **Action:** Recommend an ablation study for every new component introduced.
+
+### 3. Reproducibility
+**Reviewer Insight:** If they can't run it, they won't accept it.
+- **Bad Example (Critique):** "No code is provided... making the results hard to reproduce and inaccessible."
+- **Good Example (Praise):** "Open-sourced model weights, training data, code, and logs." "Comprehensive experimentation... demonstrating generalizability."
+
