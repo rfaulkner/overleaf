@@ -41,3 +41,22 @@ Define all variables and notation before use. Group global definitions in a Prel
 
 ### Linear Logical Flow
 The section should have a linear, logical flow, building up intuitions and methods piece by piece. All ideas should be described using the formalism introduced in the Problem Setting and building on concepts from Background.
+
+## Improvement Prompting Template
+
+```
+Your task is to improve the following Methods section:
+<<methods_section>>
+
+Here is the guidance for a good Methods section:
+- **Reproducibility**: Is there enough detail to reimplement the method?
+- **Justification**: Is it clear *why* specific design choices (e.g., architecture, loss function) were made?
+- **Notation**: Is notation defined clearly and used consistently?
+- **Intuition**: Does the text provide high-level intuition before diving into equations?
+
+Critique the section based on these criteria.
+Then, suggest concrete improvements, such as:
+1.  Adding a "Preliminaries" subsection for notation.
+2.  Clarifying the "why" behind a specific equation.
+3.  Adding a running example.
+```

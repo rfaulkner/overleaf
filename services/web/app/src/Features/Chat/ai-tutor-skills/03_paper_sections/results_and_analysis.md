@@ -112,3 +112,22 @@ When presenting performance experiments, consider reporting:
 - Include statements on hyperparameters and fairness of comparisons.
 - Include ablation studies to show that specific parts of the method are relevant.
 - Use past tense when describing what you did in experiments or what happened in experiments.
+
+## Improvement Prompting Template
+
+```
+Your task is to improve the following Results and Analysis section:
+<<results_section>>
+
+Here is the guidance for a good Results section:
+- **Questions First**: Is the analysis organized around clear Research Questions (RQs)?
+- **Interpretation**: Does the text interpret the tables/figures, not just repeat the numbers?
+- **Claims**: Are the claims supported by the evidence shown?
+- **Takeaways**: Are the key findings bolded or easy to scan?
+
+Critique the section based on these criteria.
+Then, suggest improvements, such as:
+1.  Restructuring subsections around RQs.
+2.  Adding interpretive sentences for Figure X.
+3.  Suggesting a bold "Finding 1: ..." structure.
+```
